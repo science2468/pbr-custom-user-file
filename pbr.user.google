@@ -14,7 +14,6 @@ DB_SOURCE='ipinfo.io'
 #DB_SOURCE='api.hackertarget.com'
 #DB_SOURCE='api.bgpview.io'
 REGEX_IPV4='[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\/[0-9]\{1,\}'
-REGEX_IPV6='.*::.*'
 _ret=0
 
 if [ ! -s "$TARGET_DL_FILE_4" ]; then
