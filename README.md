@@ -1,0 +1,1 @@
+smartdns+pbr+openvpn在openwrt上可以像代理软件那样使用。
