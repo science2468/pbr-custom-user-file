@@ -10,9 +10,9 @@ TARGET_ASN='15169'
 TARGET_DL_FILE_4="/var/pbr_tmp_AS${TARGET_ASN}.ipv4"
 # Uncomment the following line if you enabled ipv6 for pbr and want IPv6 entries added to the IPv6 set
 # TARGET_DL_FILE_6="/var/pbr_tmp_AS${TARGET_ASN}.ipv6"
-DB_SOURCE='ipinfo.io'
+#DB_SOURCE='ipinfo.io'
 #DB_SOURCE='api.hackertarget.com'
-#DB_SOURCE='api.bgpview.io'
+DB_SOURCE='api.bgpview.io'
 REGEX_IPV4='[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\/[0-9]\{1,\}'
 _ret=0
 
