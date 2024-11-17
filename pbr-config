@@ -14,15 +14,19 @@ config policy
         option name 'copilot'
         option dest_addr 'copilot.microsoft.com'
         option interface 'vpnclient'
-        option dest_port '443'
-
-config policy
-        option name 'warp'
-        option dest_addr '162.159.192.0/23'
-        option interface 'vpnclient'
-        option dest_port '2408'
 
 config policy
         option name 'google'
         option dest_addr '142.250.0.0/15 172.217.0.0/16 173.194.0.0/16 74.125.0.0/16 216.239.32.0/19'
+        option interface 'vpnclient'
+
+config policy
+        option name 'chatgpt'
+        option dest_addr '104.18.32.0/24 172.64.155.0/24 172.64.146.0/24'
+        option interface 'vpnclient'
+        option dest_port '443'
+
+config policy
+        option name 'twitter'
+        option dest_addr '209.237.192.0/19 104.244.40.0/21 146.75.0.0/16 151.101.0.0/16'
         option interface 'vpnclient'
