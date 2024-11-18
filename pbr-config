@@ -22,7 +22,7 @@ config policy
 
 config policy
         option name 'chatgpt'
-        option dest_addr '104.18.32.0/24 172.64.155.0/24 172.64.146.0/24'
+        option dest_addr '104.18.32.0/24 172.64.155.0/24 172.64.146.0/24 172.64.152.0/24'
         option interface 'vpnclient'
         option dest_port '443'
 
