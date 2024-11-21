@@ -1,1 +1,1 @@
-smartdns+pbr+openvpn在openwrt上可以像代理软件那样使用。
+smartdns+pbr+openvpn/wireguard在openwrt上可以如所有通用代理软件那样使用。使用模式就是如黑名单模式，增加需要代理的域名或者ip/cidr。
