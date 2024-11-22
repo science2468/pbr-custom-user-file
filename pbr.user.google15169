@@ -2,6 +2,7 @@
 # This file is heavily based on code from https://github.com/Xentrk/netflix-vpn-bypass/blob/master/IPSET_Netflix.sh
 # Credits to https://forum.openwrt.org/u/dscpl for api.hackertarget.com code.
 # Credits to https://github.com/kkeker and https://github.com/tophirsch for api.bgpview.io code.
+# 经过实践，Google常用的ASN:15169和396982
 
 TARGET_INTERFACE='vpnclient'
 TARGET_NFTSET_4="pbr_${TARGET_INTERFACE}_4_dst_ip_user"
