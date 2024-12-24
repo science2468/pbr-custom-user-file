@@ -32,6 +32,8 @@ chatgpt.com
 statsigapi.net
 oaistatic.com
 twitchcdn.net
+ext-twitch.tv
+twitchsvc.net
 ttvnw.net
 twitch.tv
 branch.io
