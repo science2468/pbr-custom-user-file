@@ -7,7 +7,6 @@
 91.105.192.0/22
 149.154.160.0/20
 185.76.151.0/24
-
 copilot.microsoft.com
 github.com
 githubusercontent.com
@@ -40,6 +39,18 @@ branch.io
 jtvnw.net
 sprig.com
 imrworldwide.com
+71.18.53.228
+23.220.75.201
+23.220.75.228
+23.220.75.245
+23.220.75.232
+23.220.75.217
+23.15.241.19
+23.15.241.42
+23.15.241.51
+23.15.241.56
+23.15.241.67
+23.15.241.96
 discord.com
 adjust.com
 discordapp.com
