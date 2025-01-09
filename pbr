@@ -1,73 +1,44 @@
-
-config pbr 'config'
-	option enabled '1'
-	option verbosity '2'
-	option strict_enforcement '1'
-	option resolver_set 'dnsmasq.nftset'
-	list resolver_instance '*'
-	option ipv6_enabled '0'
-	option boot_timeout '30'
-	option rule_create_option 'add'
-	option procd_boot_delay '0'
-	option procd_reload_delay '1'
-	option webui_show_ignore_target '0'
-	option nft_rule_counter '0'
-	option nft_set_auto_merge '1'
-	option nft_set_counter '0'
-	option nft_set_flags_interval '1'
-	option nft_set_flags_timeout '0'
-	option nft_set_policy 'performance'
-	list webui_supported_protocol 'all'
-	list webui_supported_protocol 'tcp'
-	list webui_supported_protocol 'udp'
-	list webui_supported_protocol 'tcp udp'
-	list webui_supported_protocol 'icmp'
-	list ignored_interface 'vpnserver'
-	list ignored_interface 'wgserver'
-	list supported_interface 'vpnclient'
-
-config include
-	option path '/usr/share/pbr/pbr.user.aws'
-	option enabled '0'
-
-config include
-	option path '/usr/share/pbr/pbr.user.wg_server_and_client'
-	option enabled '0'
-
-config include
-	option path '/usr/share/pbr/pbr.user.netflix'
-	option enabled '0'
+config policy
+        option name 'telegram'
+        option dest_addr '91.108.56.0/22 91.108.4.0/22 91.108.8.0/22 91.108.16.0/22 91.108.12.0/22 149.154.160.0/20 91.105.192.0/23 91.108.20.0/22 185.76.151.0/24'
+        option interface 'vpnclient'
 
 config policy
-	option name 'Ignore Local Requests'
-	option interface 'ignore'
-	option dest_addr '10.0.0.0/24 10.0.1.0/24 192.168.100.0/24 192.168.1.0/24'
-	option enabled '0'
+        option name 'chatgpt'
+        option dest_addr 'openai.com chatgpt.com oaistatic.com'
+        option interface 'vpnclient'
 
 config policy
-	option name 'Plex/Emby Local Server'
-	option interface 'wan'
-	option src_port '8096 8920 32400'
-	option enabled '0'
+        option name 'copilot'
+        option dest_addr 'copilot.microsoft.com'
+        option interface 'vpnclient'
 
 config policy
-	option name 'Plex/Emby Remote Servers'
-	option interface 'wan'
-	option dest_addr 'plex.tv my.plexapp.com emby.media app.emby.media tv.emby.media'
-	option enabled '0'
+        option name 'google'
+        option dest_addr 'google.com googlevideo.com googleusercontent.com 1e100.net googleapis.com gstatic.com youtube.com ytimg.com ggpht.com sentry.io'
+        option interface 'vpnclient'
 
 config policy
-	option name 'telegram'
-	option dest_addr '91.108.56.0/22 91.108.4.0/22 91.108.8.0/22 91.108.16.0/22 91.108.12.0/22 91.108.20.0/22 91.105.192.0/22 149.154.160.0/20 185.76.151.0/24'
-	option interface 'vpnclient'
+        option name 'github'
+        option dest_addr 'github.com githubusercontent.com'
+        option interface 'vpnclient'
 
 config policy
-	option name 'copilot'
-	option dest_addr 'copilot.microsoft.com'
-	option interface 'vpnclient'
+        option name 'tiktok'
+        option dest_addr '71.18.53.228 23.220.75.201 23.220.75.228 23.220.75.245 23.220.75.232 23.220.75.217 23.15.241.19 23.15.241.42 23.15.241.51 23.15.241.56 23.15.241.67 23.15.241.96 tiktok.com tiktokcdn-eu.com tiktokcdn-us.com tiktokcdn.com tiktokd.net tiktokd.org tiktokv.com tiktokv.eu tiktokv.us tiktokw.eu tiktokw.us p16-tiktokcdn-com.akamaized.net'
+        option interface 'vpnclient'
 
 config policy
-	option name 'gfwlist'
-	option dest_addr 'file:///etc/smartdns/domain-set/gfwlist.conf'
-	option interface 'vpnclient'
+        option name 'discord'
+        option dest_addr 'discord.com adjust.com discordapp.net discordapp.com discord.gg'
+        option interface 'vpnclient'
 
+config policy
+        option name 'twitter'
+        option dest_addr 'twitter.com x.com twimg.com'
+        option interface 'vpnclient'
+
+config policy
+        option name 'twitch'
+        option dest_addr 'twitchcdn.net ext-twitch.tv twitchsvc.net ttvnw.net twitch.tv branch.io jtvnw.net sprig.com imrworldwide.com'
+        option interface 'vpnclient'
