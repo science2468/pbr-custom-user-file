@@ -1,44 +1,54 @@
 config policy
         option name 'telegram'
         option dest_addr '91.108.56.0/22 91.108.4.0/22 91.108.8.0/22 91.108.16.0/22 91.108.12.0/22 149.154.160.0/20 91.105.192.0/23 91.108.20.0/22 185.76.151.0/24'
-        option interface 'vpnclient'
+        option interface 'usque'
 
 config policy
         option name 'chatgpt'
         option dest_addr 'openai.com chatgpt.com oaistatic.com'
-        option interface 'vpnclient'
+        option interface 'usque'
 
 config policy
         option name 'copilot'
         option dest_addr 'copilot.microsoft.com'
-        option interface 'vpnclient'
+        option interface 'usque'
 
 config policy
         option name 'google'
-        option dest_addr 'google.com googlevideo.com googleusercontent.com 1e100.net googleapis.com gstatic.com youtube.com ytimg.com ggpht.com sentry.io'
-        option interface 'vpnclient'
+        option dest_addr 'google.com google.com.hk googlevideo.com googleusercontent.com 1e100.net googleapis.com gstatic.com youtube.com ytimg.com ggpht.com sentry.io'
+        option interface 'usque'
 
 config policy
         option name 'github'
         option dest_addr 'github.com githubusercontent.com'
-        option interface 'vpnclient'
-
-config policy
-        option name 'tiktok'
-        option dest_addr '71.18.53.228 23.220.75.201 23.220.75.228 23.220.75.245 23.220.75.232 23.220.75.217 23.15.241.19 23.15.241.42 23.15.241.51 23.15.241.56 23.15.241.67 23.15.241.96 tiktok.com tiktokcdn-eu.com tiktokcdn-us.com tiktokcdn.com tiktokd.net tiktokd.org tiktokv.com tiktokv.eu tiktokv.us tiktokw.eu tiktokw.us p16-tiktokcdn-com.akamaized.net'
-        option interface 'vpnclient'
+        option interface 'usque'
 
 config policy
         option name 'discord'
         option dest_addr 'discord.com adjust.com discordapp.net discordapp.com discord.gg'
-        option interface 'vpnclient'
+        option interface 'usque'
 
 config policy
         option name 'twitter'
-        option dest_addr 'twitter.com x.com twimg.com'
-        option interface 'vpnclient'
+        option dest_addr 'x.com twitter.com twimg.com'
+        option interface 'usque'
 
 config policy
         option name 'twitch'
         option dest_addr 'twitchcdn.net ext-twitch.tv twitchsvc.net ttvnw.net twitch.tv branch.io jtvnw.net sprig.com imrworldwide.com'
-        option interface 'vpnclient'
+        option interface 'usque'
+
+config policy
+        option name 'reddit'
+        option dest_addr 'reddit.com redditstatic.com redd.it redditmedia.com'
+        option interface 'usque'
+
+config policy
+        option name 'proton'
+        option dest_addr 'proton.me'
+        option interface 'usque'
+
+config policy
+        option name 'facebook'
+        option dest_addr 'facebook.com fb.com fbcdn.com instagram.com cdninstagram.com messenger.com'
+        option interface 'usque'
