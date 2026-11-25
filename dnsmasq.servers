@@ -27,3 +27,6 @@ server=/redditstatic.com/1.1.1.1
 server=/proton.me/1.1.1.1
 server=/github.com/1.1.1.1
 server=/githubusercontent.com/1.1.1.1
+server=/chatgpt.com/1.1.1.1
+server=/openai.com/1.1.1.1
+server=/oaistatic.com/1.1.1.1
